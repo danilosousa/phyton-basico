@@ -1,16 +1,9 @@
-# declarando variaveis
-#nome = "João"
-#idade = 23
-#print("Meu nome é " + nome)
-#print("Minha idade é " + str(idade))
-#professor = True
+def mensagem_futuro(nome: str, idade: int, anos: int = 5) -> str:
+    return f"Olá, {nome} daqui {anos} anos você tera {idade + anos} anos de idade"
 
-#print(type(professor))
 
-nome = input("Seu nome: ")
-idade = int(input("Sua idade: "))
-# fruta_favorita = input("Sua fruta favorita: ")
+if __name__ == "__main__":
+    nome = input("Seu nome: ")
+    idade = int(input("Sua idade: "))
 
-# fstring
-print(f"Olá, {nome} daqui 5 anos você tera {idade + 5} anos de idade")
-
+    print(mensagem_futuro(nome, idade))

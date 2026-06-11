@@ -1,8 +1,12 @@
-total_porcoes = int(input("Quantas porções do produto você tem? "))
+def calcular_porcoes_por_dia(total_porcoes: int, total_dias: int) -> float:
+    return total_porcoes / total_dias
 
-total_dias = int(input("Quantos dias você vai usar o produto? "))
 
-dias_de_consumo = total_porcoes / total_dias
+if __name__ == "__main__":
+    total_porcoes = int(input("Quantas porções do produto você tem? "))
+    total_dias = int(input("Quantos dias você vai usar o produto? "))
 
-print(f"Você vai usar por {total_dias} dias")
-print(f"Você precisa de {dias_de_consumo:.0f} porções")
+    porcoes_por_dia = calcular_porcoes_por_dia(total_porcoes, total_dias)
+
+    print(f"Você vai usar por {total_dias} dias")
+    print(f"Você precisa de {porcoes_por_dia:.0f} porções")
