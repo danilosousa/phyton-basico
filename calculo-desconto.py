@@ -9,4 +9,4 @@ if __name__ == "__main__":
 
     desconto, preco_final = calcular_desconto(preco)
     print(f"O desconto é de {desconto}")
-    print(f"O preço do produto com desconto é de {preco_final}")
+    print(f"O preço do produto com desconto é de {preco_final:.0f} reais")
